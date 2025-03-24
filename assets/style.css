@@ -1,0 +1,92 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: brown;
+    color: white;
+    padding: 2em;
+}
+
+
+.filtro {
+    grid-area: filtro;
+    background-color: rgb(223, 116, 116);
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.grid {
+    grid-area: grid;
+    gap: 15px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    border: solid 3px rgb(164, 57, 164);
+}
+
+.numeros {
+    grid-area: numeros;
+    display: flex;
+    justify-content: center;
+}
+
+.numeros p {
+    border: solid 2px gray;
+    text-align: center;
+    flex-grow: ;
+}
+
+button {
+    color: white;
+    background-color: rgb(223, 98, 98);
+    font-size: large;
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: brown;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+
+@media (max-width:576px) {
+    .categorias{
+       display: none ;
+       
+    }
+}
+
+
+@media (max-width:576px) {
+    .producto {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:577px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "menu filtro"
+            "menu grid"
+            "footer numeros";
+    }
+}
