@@ -6,7 +6,7 @@
     grid-area: menu;
     background-color: brown;
     color: white;
-    padding: 2em;
+    padding: 1em;
 }
 
 
@@ -17,17 +17,14 @@
     flex-direction: column;
     padding: 1em;
     text-align: center;
-    gap: 1em ;
-
-
+    margin-bottom: 0.5em;
 }
-
-
 
 .grid {
     grid-area: grid;
     gap: 15px;
     text-align: center;
+
 }
 
 .producto {
@@ -36,18 +33,19 @@
     border: solid 1.5px rgb(173, 172, 173);
 }
 
+
 .numeros {
     grid-area: numeros;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .numeros p {
     border: solid 2px gray;
     text-align: center;
-    flex-grow:0.03 ;
+    flex-grow: 0.03;
 }
 
 button {
@@ -59,20 +57,17 @@ button {
 
 footer {
     grid-area: footer;
-    background-color: brown;
-    padding: 1em;
+    background-color: rgb(223, 116, 116);
+    padding: 0.5em;
     text-align: center;
     color: white;
 }
 
-
 @media (max-width:576px) {
-    .categorias{
-       display: none ;
-       
+    .categorias {
+        display: none;
     }
 }
-
 
 @media (max-width:576px) {
     .producto {
@@ -98,9 +93,11 @@ footer {
     }
 }
 
+
 @media (min-width:768px) {
-    .numeros {
+    .grid {
         padding: 0.5em;
+        margin: 0;
     }
-    
+
 }
